@@ -1,9 +1,8 @@
-// vitest.setup.ts
-import { createVuetify } from 'vuetify'
+mimport { createVuetify } from 'vuetify'
 import * as components from 'vuetify/components'
 import * as directives from 'vuetify/directives'
 import { config } from '@vue/test-utils'
-import { vi } from 'vitest' // Importe o 'vi' para mocks
+import { vi } from 'vitest' 
 
 // 1. Inicializa o Vuetify
 const vuetify = createVuetify({
