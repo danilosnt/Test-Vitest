@@ -292,7 +292,7 @@ import { onMounted, onBeforeMount } from "vue";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import { ref } from "vue";
-import FormReserve from "@/components/Form-Reserve/form.vue";
+import FormReserve from "@/components/Form-Reserve/Form.vue";
 const isActive = ref(false);
 
 const initReserve = (param: boolean) => {

@@ -18,12 +18,11 @@ export default defineConfig({
     Vue({
       template: { transformAssetUrls },
     }),
-    // ==================================================================
-    // CORREÇÃO AQUI: Nós removemos a opção 'styles'
-    // ==================================================================
     Vuetify({
       autoImport: true,
-      // styles: { ... } FOI REMOVIDO DAQUI
+      styles: {
+        configFile: "src/styles/settings.scss",
+      },
     }),
     Components(),
     ViteFonts({
@@ -46,17 +45,5 @@ export default defineConfig({
   },
   server: {
     port: 3000,
-  },
-  // ==================================================================
-  // CORREÇÃO AQUI: Adicionamos esta seção para injetar o SASS
-  // ==================================================================
-  css: {
-    preprocessorOptions: {
-      scss: {
-        // Importa seu arquivo de settings globalmente em todos os componentes
-        // Use o alias '@' que você já definiu
-        additionalData: `@import "@/styles/settings.scss";`,
-      },
-    },
   },
 });
