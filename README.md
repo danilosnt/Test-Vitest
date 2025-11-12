@@ -2,7 +2,7 @@
 
 This project demonstrates the implementation of a **Software Test Plan** in a frontend application built with **Vue.js 3**, using **Vitest** as the main component testing tool.
 
-The **"Joks Landing Page"** is a **SPA (Single Page Application)** that serves as a digital showcase and reservation system for a fictional establishment.  
+The **"Joks Landing Page"** is a **SPA (Single Page Application)** that serves as a digital showcase and reservation system for an establishment.  
 The main focus of this repository is not the application itself but the **implementation and documentation of its testing process**.
 
 > 🌐 The web project was developed by: [https://github.com/iS0lares](https://github.com/iS0lares)
