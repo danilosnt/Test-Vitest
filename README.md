@@ -1,4 +1,4 @@
-# 🧪 Test Plan with Vitest
+# Test Plan with Vitest
 
 This project demonstrates the implementation of a **Software Test Plan** in a frontend application built with **Vue.js 3**, using **Vitest** as the main component testing tool.
 
@@ -9,7 +9,7 @@ The main focus of this repository is not the application itself but the **implem
 
 ---
 
-## 🧭 Test Plan Focus
+## Test Plan Focus
 
 The test plan is strictly focused on the most critical component of the application: `index.vue`.
 
@@ -21,7 +21,7 @@ The test plan is strictly focused on the most critical component of the applicat
 
 ---
 
-## 🎯 Specific Test Objectives
+## Specific Test Objectives
 
 The tests were written to ensure the following behaviors:
 
@@ -42,7 +42,7 @@ The tests were written to ensure the following behaviors:
 
 ---
 
-## 🛠 Technologies Used
+## Technologies Used
 
 ### Application
 - **Vue.js 3** — Main application framework  
@@ -56,8 +56,52 @@ The tests were written to ensure the following behaviors:
 
 ---
 
-## 💻 Installation and Setup
+## Installation and Setup
 
-### 1️⃣ Clone the repository:
+### Clone the repository:
 ```bash
 git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
+```
+### Navigate to the project directory:
+```bash
+cd RESPOSITORY
+```
+
+### Install dependencies:
+```bash
+npm install
+```
+
+## Running the Tests
+This project is configured with several scripts for running tests using **Vitest**.
+
+### Watch Mode (Development)
+Runs tests in watch mode, automatically re-executing when files change:
+```bash
+npx vitest
+```
+(or npm test if configured in package.json)
+
+### Graphical Interface (Vitest UI)
+For a visual and interactive testing experience:
+```bash
+npx vitest --ui
+```
+This will open the test panel in your browser.
+
+### Single Run (Validation/CI)
+Runs all tests once — ideal for Continuous Integration:
+```bash
+npx vitest run
+```
+
+### Test Coverage Report
+Generates a coverage report showing which lines of code are tested:
+```bash
+npx vitest run --coverage
+```
+
+Results will be generated inside the:
+```bash
+/coverage
+```
